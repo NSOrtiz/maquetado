@@ -1,3 +1,14 @@
+*{ /* se aplica a la pagina general*/
+    margin: 20px;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
 body{
     background-color: black; /*fond de pagina*/
+
 }
+ol {color: white;}
+ul {color: azure;}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css"> <!--rel identifica  que mandara a llammar hoja de estilos, -->
+</head>
+<body>
+   <header><!--cabecera visual de una pagina o seccion
+    logo, menu de navegacion -->
+    <h1>Selectores avanzados</h1>
+    <section>
+        <nav> <!--navegacion-->
+            <a href="./pages/atributos.html">Ir a atributos</a>
+        </nav>
+    </section>
+   </header>
+   <main><!--contenido de una pagina solo una etiqueta main por pagina-->
+        <!--seccion hijo-->
+        <section id="selectorHijo" class="contenedor">
+           
+           <h2>Selector hijo</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem suscipit odit mollitia, maiores ipsum eos aperiam dolor laborum. Cupiditate, in quae sequi illum culpa voluptate? Nisi quam eius nesciunt expedita!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta enim nihil facere, mollitia porro nobis. Porro tempore repellat necessitatibus, voluptates vitae, praesentium temporibus eum ipsum explicabo tempora quod quis et.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat, vitae quis sint laboriosam quas illo distinctio voluptates, minus ipsa facilis eaque nemo minima magni! Adipisci illo ad fuga veniam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sequi modi sit soluta, quaerat, porro, id commodi quam nesciunt est hic officia vitae. Facilis corrupti, dolorum iste et recusandae sed.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis sunt. Incidunt, aut eius ex consequuntur quae, quasi nostrum soluta molestias esse, quo iusto iure vitae quas voluptate provident et.
+            </p>
+        </section>
+        <!--seccion hijo directo-->
+        <section id="selectorHijoDirecto" class="contenedor">
+            <!--la relacion depende de la identacion si estan al mismo nivel son hermanos
+            si derivan del elemento en la parte superior entonces son padres e  hijos, se rempe relacion 
+            al agregar otra etiqueta que modifique el nivel de identacion
+            - hermanos
+            - heramano (padre1)
+               - (hijo1) hermano
+               - (hijo1) hermano (padre2)
+                   - hijo2 (nieto1)
+                   --->
+            <h2>Selector hijo directo</h2>
+            <p> <!--parrafos son hijos de selector hijo-->
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem suscipit odit mollitia, maiores ipsum eos aperiam dolor laborum. Cupiditate, in quae sequi illum culpa voluptate? Nisi quam eius nesciunt expedita!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta enim nihil facere, mollitia porro nobis. Porro tempore repellat necessitatibus, voluptates vitae, praesentium temporibus eum ipsum explicabo tempora quod quis et.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores fugiat, vitae quis sint laboriosam quas illo distinctio voluptates, minus ipsa facilis eaque nemo minima magni! Adipisci illo ad fuga veniam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sequi modi sit soluta, quaerat, porro, id commodi quam nesciunt est hic officia vitae. Facilis corrupti, dolorum iste et recusandae sed.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, corporis sunt. Incidunt, aut eius ex consequuntur quae, quasi nostrum soluta molestias esse, quo iusto iure vitae quas voluptate provident et.
+            </p>
+
+            <div><!--se rompre relacion padre hijo-->
+                <p>
+                    parrafo nieto
+                </p>
+            </div>
+            <p>
+                parrafo hijo
+            </p>
+        </section>
+        <!--selector hermano general-->
+        <section id="selecHermanoGen" class="contenedor">
+            <h2>Selector hijo directo</h2>
+            <button>
+                click me
+            </button>
+            <span>
+                span hermano
+            </span>
+            <div> <!--se rompre relacion hermanos-->
+                <button>
+                    click me
+                </button>
+            </div>
+        </section>
+        <!--selector hermano adyacente-->
+        <section id="selecHermanoAdy" class="contenedor">
+            <h2>
+                Selector hermano adyacente
+            </h2>
+            <h3>
+                titulo h3 hijo
+            </h3>
+            <p>
+                parrafo hijo
+            </p>
+            <h3>
+                titulo h3 2
+            </h3>
+            <h2>
+                Selector hermano adyacente 2
+            </h2>
+            <h3>
+                titulo h3 hijo 2
+        </section>
+
+
+        
+
+   </main>
+</body>
+</html>

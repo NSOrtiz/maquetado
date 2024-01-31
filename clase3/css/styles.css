@@ -1,0 +1,94 @@
+/*herencias, todo lo que se encuentra en  el body*/
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.contenedor{
+    background-color: #e3e3e3;
+    border: 1px solid #0e0b0b;
+    padding: 12px;
+    margin: 50px; /*50 expaciado a todas las direcciones*/
+    /*margin: 10px 20px primer valor vertical, segundo horizontal
+    margin: 10px 5px 15px 40px arriba derecha abajo izquierda*/
+
+}
+/*Selector hijo*/
+#selectorHijo p{
+    color: blue;
+}
+/*Selector hijo directo > indica hijo*/
+#selectorHijoDirecto > p{
+    color:red;
+    font-style: italic;  
+}
+/*Selector hermano general ~ inica hermano*/
+/*busca boton hermana de h2*/
+#selecHermanoGen h2 ~ button{
+    background-color: blue;
+    color: white;
+}
+/*Selector hermano adyacente */
+/*busca h3 hermana de h2, solo se cumple la primera vez que aparece h3 si se cumple la condicion*/
+#selecHermanoAdy h2 + h3{
+    color: yellow;
+}
+/*selectror de atributo*/
+a[href="https://kodemia.mx/"], a[href="https://www.google.com"] {
+    text-decoration: none;
+
+}
+
+input[type="text"]{
+    width: 100px;
+    padding: 10px;
+}
+
+#pseudoselectores .btn{/*boton*/
+    background-color: #454556;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+#pseudoselectores .btn:hover{ /*propiedades del elemento en este caso el boton*/
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: line-through;
+}
+
+#enlace a:link{/*enlaces no visitados todavia*/
+    color: red;
+}
+
+#enlaces a:visited,
+#enlaces a:hover { /*afecta a los enlaces ya visitados*/
+    color: green;
+}
+
+.caja {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+#listas div:first-child{/*primer elemento en la seccion*/
+    background-color: blue;
+    color: white;
+}
+
+#listas div:last-child{ /*ultimo elemento en la seccion*/
+    background-color: green;
+}
+
+#listas div:nth-child(3){ /*seleccion de elemento deseado*/
+    background-color: purple;
+}

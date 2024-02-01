@@ -1,0 +1,29 @@
+.cajaR{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;/*la mitad de lo que mide la caja*/
+}
+.Rcentral{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    background-color: aquamarine;
+}
+.RDerecha{
+    position: absolute;
+    background-color: rgb(6, 88, 61);
+    top: -10%;
+    right: -10%;
+    z-index: 1;
+
+}
+.RIzquierda{
+    position: absolute;
+    background-color: rgb(4, 75, 51);
+    top: -10%;
+    left: -10%;
+    z-index: 1;
+}

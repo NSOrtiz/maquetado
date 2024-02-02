@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;    /*aplica y respeta las medidas del objeto padre, evitando que olos objetos los rebasen*/
+}
+/*estilos base para pantallas de 600px hacia abajo o mobile*/
+.contNoResponsiva{
+    width: 450px;
+    height: 200px;
+    background-color: aquamarine;
+}
+.contResponsiva{
+    margin-top: 15px;
+    width: 100%; /*adaptacion al tamaño visual de la pagina*/
+    height: 200px;
+    background-color: rgb(121, 117, 160);
+}
+.cajaMorada{
+    padding: 10px;
+    height: 50%;
+    width: 100%;
+    background-color: rgb(62, 53, 145);
+}
+
+/*@media screen and (max-width:600px) {/*diemsniones
+    cuadno cumpla condciones de medidas aplica:
+    body{
+        background-color: black;
+    }
+
+    .cajaMorada{
+        width: 45%;
+        height: 400px;
+    }
+}*/
+
+/*media queries
+de menor a mayor para que pueda consrvar algunos estilos 
+no modificados del contenedor anterior 
+estilos para tablet*/
+@media screen and (min-width: 768px){
+    .contNoResponsiva{
+        background-color: green;
+    }
+
+}
+
+/*etilos para laptops normal*/
+
+@media screen and (min-width:992px){
+    .contNoResponsiva{
+        background-color: yellowgreen;
+        height: 500px;
+    }
+    
+}
+
+/*etilos para laptops hd*/
+
+@media screen and (min-width:1440px){
+    .contNoResponsiva{
+        background-color: yellow;
+    }
+}
+
+/*display: none;
+display: block;*/

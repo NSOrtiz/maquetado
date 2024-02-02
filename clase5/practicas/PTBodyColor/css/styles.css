@@ -1,0 +1,63 @@
+
+body{
+    background-color: black;
+    color: white;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+}
+#TM{
+    display: block;
+}
+#TT{
+    display: none;
+}
+#TL{
+    display: none;
+}
+#THD{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px){
+    body{
+        background-color: rgb(58, 2, 35);
+    }
+    #TM{
+        display: none;
+    }
+    #TT{
+        display: block;
+    }
+
+}
+
+/*etilos para laptops normal*/
+
+@media screen and (min-width:992px){
+    body{
+        background-color: rgb(108, 18, 126);
+    }
+    #TT{
+        display: none;
+    }
+    #TL{
+        display: block;
+    }
+    
+}
+
+/*etilos para laptops hd*/
+
+@media screen and (min-width:1440px){
+    body{
+        background-color: rgb(131, 29, 54);
+    }
+    #TL{
+        display: none;
+    }
+    #THD{
+        display: block;
+    }
+}
+

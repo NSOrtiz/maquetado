@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Mobile*/
+body {
+    background: linear-gradient(rgba(121,9,100,1), rgba(231,199,211,1));
+    min-height: 100vh;
+    font-family: sans-serif;
+    color: black
+}
+header h1{
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: rgb(211, 17, 82);
+    color: white;
+    font-size: 30px;
+    border: 1px solid rgb(212, 197, 203);
+}
+main{
+    width: 100%;
+}
+
+.img{
+    margin: 10px;
+    width: 40%;
+}
+
+.Blog{
+     width: 80%;
+     margin: auto;
+     padding: 10px;
+     border: 1px solid rgb(224, 201, 210);
+}
+
+.post{
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+.box{
+    z-index: -1;
+    position: absolute;
+    width: 78%;
+    height: 280px;
+    background-image: url(https://dbdzm869oupei.cloudfront.net/img/photomural/preview/70518.png);
+    filter: blur(5px);
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.ptext{
+    text-align: justify;
+}
+
+/*tablets*/
+@media screen and (min-width:768px) {
+    .post{
+        z-index: 1;
+        width: 45%;
+        display: inline-block;
+        text-align: center;
+        margin: 20px 0.5%;
+    }
+    .box{
+        z-index: -1;
+        position: absolute;
+        width: 35%;
+        height: 300px;
+        background-image: url(https://dbdzm869oupei.cloudfront.net/img/photomural/preview/70518.png);
+        filter: blur(5px);
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+/*etilos para laptops normal*/
+
+@media screen and (min-width:992px){
+    .post{
+        z-index: 1;
+        width: 30%;
+        text-align: center;
+        margin: 20px 1.2%;
+    }
+    .box{
+        z-index: -1;
+        position: absolute;
+        width: 25%;
+        height: 330px;
+        background-image: url(https://dbdzm869oupei.cloudfront.net/img/photomural/preview/70518.png);
+        filter: blur(5px);
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+    
+}
+
+/*etilos para laptops hd*/
+
+/*@media screen and (min-width:1440px){
+    .post{
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .box{
+        z-index: -1;
+        position: absolute;
+        width: 78%;
+        height: 280px;
+        background-image: url(https://img.freepik.com/fotos-premium/patron-floral-fondo-floral_900958-10469.jpg);
+        filter: blur(5px);
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+}*/

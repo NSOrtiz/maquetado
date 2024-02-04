@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Kurale&display=swap');
+
+*{/* aspectos generales de pagina*/
+    background-color: rgb(255, 231, 244);
+    block-size: border-box;
+    margin: 0px;
+    padding: 0;
+    font-family: 'Kurale', serif
+}
+/*aspectos de generales de todas las paginas*/
+header{
+    width: 100%;
+    background-color: rgb(252, 201, 218);
+    margin: 0;
+    padding: 10px;
+}
+#tituloP{/*titulo en header*/
+    text-align: center;
+    background-color: rgb(252, 201, 218);
+    color: black;
+    font-weight: 800;
+    font-size: 50px;
+    padding: 0;
+}
+.nav1{ /*barra de navegacion*/
+    display: grid;
+    grid-template-columns: auto auto auto auto auto; /*acomodo horizontal equitativo*/
+    grid-template-rows: 50px; /*acomodo horizontal*/
+    background-color: rgb(252, 201, 218);
+}
+.lis{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 201, 218);
+    border: 1px solid rgb(250, 244, 250);
+}
+/*imagenes de header*/
+.img1{/*imagen derecha*/
+    position: absolute;
+    top: 10px;
+    left: 8%;
+    width: 8%;
+    height: 4%;
+    /*quitar fondo blanco*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+.img2{/*imagen izquierda*/
+    position: absolute;
+    top: 10px;
+    right: 8%;
+    width: 8%;
+    height: 4%;
+    /*quitar fondo blanco*/
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+
+.conteiner1{/* main todas las paginas*/
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+    
+}
+
+/*-----informacion de index, pagina principal------*/
+/*-------------------------------------------------------------------------------------*/
+.actividades{/*contenedor de cuadros de activides*/
+    width: 100%;
+    height: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+.AImg{/*propiedades de imagenes en main*/
+    width: 80%;
+    border-radius: 10%;
+    border: 10px solid  rgb(206, 57, 82);
+}
+
+.TXT{/*cuadro de texto con filtro*/
+    position: relative;
+    top: -150px;
+    left: 20%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 30px;
+    backdrop-filter: blur(10px);
+    width: 50%;
+}
+
+/*------contenido del pagina de fechas-----*/
+/*-------------------------------------------------------------------------------------*/
+.conteiner2{/*contenido a lo largo de lo que se deslizara el de propuiedad Sticker*/
+    border: 2px solid white;
+}
+.posSticky1{/*propiedad de Stick para titulo de mes*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgb(236, 121, 146);
+    border: 2px solid white;
+}
+.posSticky2{/*propiedad de Stick para dia/hora/actividades*/
+    position: sticky;
+    top:80px;
+    left: 0;
+    display: grid;
+    font-size: 30px;
+    border: 1px solid white;
+}
+.titulos{/*titulos de mes*/
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    background-color: rgb(236, 121, 146); 
+}
+.cl{/*encabezado para dia/hora/actividades */
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 50px;
+}
+.lt{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid pink;
+    background-color: rgb(59, 3, 15);
+    color: white;
+    font-size: 30px;
+}
+/*contenedor para lista delas fechas*/
+.block1{
+    width: 25%;
+    text-align: end;/*alinacion del texto al final*/
+
+}
+.dy{
+    display: grid;/*colocacion de grid en lista*/
+    font-size: 30px;
+    color: rgb(59, 3, 15);
+    padding-right: 10%;
+    border: 1px solid white;
+}
+
+/*Contenido pagina de festividades*/
+/*-------------------------------------------------------------------------------------*/
+.conteiner3{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 30px;
+    border: 1px solid white;
+    box-shadow: -.5px 3px 5px rgb(59, 3, 15);
+}
+.subtitulos{/*titulos de mes*/
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    background-color: rgb(236, 121, 146); 
+}
+.calendario{/*formato para calendario*/
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);/* separa en 7 columnas y repite segun tamño de contenido*/
+    
+}
+.day{
+    list-style: none;/*quita los nmeros de lista*/
+    text-align: center;
+    padding: .3em .5em; /*espacio entre numeros*/
+    color: rgb(59, 3, 15);
+}
+.dname{
+    background-color: rgb(156, 10, 42);
+    color: white;
+    font-weight: 300;
+    text-align: center;
+}
+.first-dayD{
+    grid-column-start: 1;
+}
+.first-dayL{
+    grid-column-start: 2;
+}
+.first-dayM{
+    grid-column-start: 3;
+}
+.first-dayMM{
+    grid-column-start: 4;
+}
+.first-dayJ{
+    grid-column-start: 5;
+}
+.first-dayV{
+    grid-column-start: 6;
+}
+.first-dayS{
+    grid-column-start: 7;
+}
+.festivo{
+    background-color: rgb(236, 121, 146);
+    color: white;
+    list-style: none;/*quita los nmeros de lista*/
+    text-align: center;
+    padding: .3em .5em; /*espacio entre numeros*/
+}
+/*Contenido pagina deContactos*/
+/*-------------------------------------------------------------------------------------*/
+.block2{
+    width: 80%;
+    text-align: start;/*alinacion del texto al final*/
+    margin-left: 10%;
+
+
+}
+.names{
+    display: grid;/*colocacion de grid en lista*/
+    font-size: 30px;
+    color: rgb(59, 3, 15);
+    padding-left: 10%;
+    border-top: 1px solid white;
+}
+
+
+
+
+/*------animaciones------*/
+/*-------------------------------------------------------------------------------------*/
+.AImg:hover{/*imagenes en main de pagina principal de agenda*/
+    filter:saturate(2);/*iluminacion de imagene al pasar por ella*/
+    cursor: pointer;/*cambio de cursor*/
+}
+/*en barra de navegacion en todas la paginas*/
+.btn{/*caracteriticas del boton*/
+    font-size: 30px;
+    padding: 1px;
+    background-color: rgb(252, 201, 218);
+    color: white;
+    border: none;
+    transition: all 1000ms cubic-bezier(0.30,-0.04, 0.62, 1.5);
+    text-decoration: none;
+}
+.btn:hover{/*cuando pones el mouse sobre el elemento*/
+    background: white;
+    color: indianred;
+    border: 1px solid pink;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+
+/*caracteriticas tamaño de pantalla*/
+/*---------------------------------------------------------------------------*/
+@media screen and (min-width: 768px){
+    .img1{
+        position: absolute;
+        top: 10px;
+        left: 10%;
+        width: 10%;
+        height: 7%;
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+    }
+    .img2{
+        position: absolute;
+        top: 10px;
+        right: 10%;
+        width: 10%;
+        height: 7%;
+        filter: brightness(1.1);
+        mix-blend-mode: multiply;
+    }
+    .TXT{
+        position: relative;
+        top: -160px;
+        left: 25%;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 5px;
+        text-align: center;
+        font-size: 30px;
+        backdrop-filter: blur(10px);
+        width: 50%;
+    }
+
+}
+@media screen and (min-width:992px){
+    .actividades{
+        width: 45%;
+        display: inline-block;/*pone contenido en vertical*/
+        height: 80%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .AImg{
+        width: 80%;
+        height: 350px;
+        border-radius: 10%;
+        border: 10px solid  rgb(206, 57, 82);
+    }
+}

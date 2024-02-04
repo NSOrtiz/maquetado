@@ -68,23 +68,7 @@ presenta cualidades de fixed*/
     background-color: white;
     
 }
-.btn{
-    padding: 5px;
-    background-color: coral;
-    color: white;
-    border: none;
-    transition: all 1000ms cubic-bezier(0.30,-0.04, 0.62, 1.5);
 
-
-}
-.btn:hover{/*cuando pones el mouse sobre el elemento*/
-    background: white;
-    color: indianred;
-    border: 1px solid pink;
-    transform: scale(1.5);
-    cursor: pointer;
-
-}
 .img{
     transition: filter 800ms ease;
 }

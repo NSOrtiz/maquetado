@@ -1,0 +1,23 @@
+@import 'global';
+
+
+/*barra de navegacion
+----------------------------------------------------------------------*/
+.details{
+    height: 56px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background: rgb(255, 255, 255);
+}
+/*clase logoDev*/
+.logoDev{
+    height: 40px;
+}
+
+/* separacion de contenido
+----------------------------------------------------------------------*/
+.separador{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    background: #efefef;
+}

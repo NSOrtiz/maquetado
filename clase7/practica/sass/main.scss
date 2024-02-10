@@ -1,0 +1,57 @@
+@import 'contenido';
+@import 'global';
+
+.cont1{
+    width: 100%;
+    height: 100vh;
+   
+    .hero{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-image: url(https://assets-global.website-files.com/63634f4a7b868a399577cf37/654b93127a7598bb73c5db13_beagle%20enano.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.cont2{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    margin: 20px;
+}
+.c{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+@media screen and (min-width: 990px){
+    .c{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: start;
+    }
+    .cont2{
+        width: 40%;
+        height:100% ;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        margin: 20px;
+    }
+}
+
+
+

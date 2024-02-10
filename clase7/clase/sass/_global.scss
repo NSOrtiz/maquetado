@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*uso de varaibles*/
+$blackcolor: black;
+$color1: azure;
+$colort: aqua;
+$postSpacing: 20px 30px;
+$btncolor: rgb(203, 159, 233);
+
+/*mixins*/
+@mixin flexColumnCenter(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@mixin btnPost($btncolor){
+    border: 1px solid black;
+    background-color: $btncolor;
+    text-align: center;
+    padding: 20px;
+}

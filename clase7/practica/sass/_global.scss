@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
+$txt: 'Protest Revolution', sans-serif;
+$colorVr:rgb(10, 41, 3);
+$colorCf:rgb(110, 31, 0);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $txt;
+    color: $colorVr;
+}
+
+@mixin texto($txt){
+    font-family: $txt;
+    font-size: 30px;
+    color: $colorVr;
+    text-align: center;
+}
+@mixin IP(){
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}

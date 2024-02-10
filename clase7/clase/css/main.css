@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*uso de varaibles*/
+/*mixins*/
+.post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 300px;
+  background-color: azure;
+  padding: 20px 30px;
+  margin: 20px;
+}
+.post img {
+  border-radius: 50%;
+}
+.post img:hover { /*selector especial "&" pseudoselectores y pseudoelementos */
+  width: 150px;
+  height: 150px;
+}
+.post .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.post .content p {
+  color: aqua;
+  font-size: 40px;
+}
+.post .content button {
+  border: 1px solid black;
+  background-color: rgb(203, 159, 233);
+  text-align: center;
+  padding: 20px;
+}
+
+body {
+  background-color: black;
+}
+
+section {
+  width: 80%;
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*CONFIGURACIONES DE SAAS replica estructura de contenido de html*/
+}
+
+#hero {
+  background-image: url("https://s1.1zoom.me/b5548/425/Waves_Closeup_Ocean_Sea_518011_1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}/*# sourceMappingURL=main.css.map */

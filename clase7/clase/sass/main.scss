@@ -1,0 +1,24 @@
+
+
+@import 'global';
+@import 'post';
+
+body{
+    background-color: $blackcolor
+}
+
+section{
+    width: 80%;
+    display: flex;
+    @include flexColumnCenter();
+        /*CONFIGURACIONES DE SAAS replica estructura de contenido de html*/
+    
+}
+
+#hero{
+    background-image: url("https://s1.1zoom.me/b5548/425/Waves_Closeup_Ocean_Sea_518011_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+

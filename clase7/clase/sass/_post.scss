@@ -1,0 +1,26 @@
+.post{
+    @include flexColumnCenter();
+    width: 80%;
+    max-width: 300px;
+    background-color: $color1;
+    padding: $postSpacing;
+    margin: 20px;
+    img{
+        border-radius:50%;
+        &:hover{ /*selector especial "&" pseudoselectores y pseudoelementos */
+            width: 150px;
+            height: 150px;
+
+        }
+    }
+    .content{
+        @include flexColumnCenter();
+        p{
+            color: $colort;
+            font-size: 40px;
+        }
+        button{
+            @include btnPost($btncolor);
+        }
+    }
+}

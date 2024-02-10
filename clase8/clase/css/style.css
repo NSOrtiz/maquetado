@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+}
+
+.miCol{
+    
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid white;
+}
+#container1{
+    margin: 20px;
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Format{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    width: 100%;
+}
+
+.colR{
+    background-color: pink;
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    text-align: center;
+}
+.colA{
+    background-color: rgb(118, 118, 241);
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    text-align: center;
+}
+.colN{
+    background-color: rgb(212, 132, 94);
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    text-align: center;
+}
+.colV{
+    background-color: rgb(200, 233, 150);
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    text-align: center;
+}
+.colAM{
+    background-color: rgb(218, 233, 150);
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    text-align: center;
+}
+.colM{
+    background-color: rgb(165, 94, 212);
+    color: white;
+    border: 1px solid white;
+    height: 50px;
+    text-align: center;
+}

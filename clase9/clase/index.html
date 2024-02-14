@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boobstrap</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+</head>
+
+<body >
+    <!--------------------------barra de navegacion------------------------------------>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="https://img.freepik.com/vector-gratis/plantilla-logo-montanismo_1126-55.jpg" alt="Bootstrap" width="50" height="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Trips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!--------------------------hero slide----------------------------------------------->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide margenes1">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img src="https://www.mexicodesconocido.com.mx/wp-content/uploads/2020/07/Cascada_de_Tamul_vista_desdes_abajo.jpg" class="d-block tamañoH" alt="I1">
+            <div class="carousel-caption d-none d-sm-block"  >
+              <div class="difuse">
+                <h5>Discover</h5>
+                <p>A new way of traveling</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item " data-bs-interval="2000">
+            <img src="https://www.elsoldesanluis.com.mx/incoming/x7iprr-municipio-xilitla-1.jpg/ALTERNATES/LANDSCAPE_768/Municipio%20Xilitla%20(1).jpg" class="d-block tamañoH " alt="I2">
+            <div class="carousel-caption d-none d-sm-block">
+              <div class="difuse">
+                <h5>Explore</h5>
+                <p>Amazing places are waiting for you</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.boundlessroads.com/wp-content/uploads/2018/01/Huasteca-potosina-el-salto-860x574.jpg" class="d-block tamañoH " alt="I3">
+            <div class="carousel-caption d-none d-sm-block">
+              <div class="difuse">
+                <h5>Live a different experience</h5>
+                <p>Don't miss the opportunity to travel, come with us!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>                                                 
+      </div>
+    
+      <!-------------------------contenido tercias----------------------------------------------> 
+      <section class="container margenes1">
+        <div class="row">
+          <article class="col-12 col-md-4   posiciones contenedor">
+            <div class="posiciones">
+              <img src="https://cdn-icons-png.flaticon.com/512/2693/2693507.png" alt="" class="IF" >                 
+              <h3 class="contorno">Fechas</h3>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-4  posiciones contenedor">
+            <div class=" posiciones">
+              <img src="https://cdn-icons-png.flaticon.com/128/489/489870.png" alt="" class="IF">
+              <h3 class="contorno">Hospedaje</h3>
+            </div>
+          </article>
+
+          <article class="col-12 col-md-4 posiciones contenedor">
+            <div class="posiciones">
+              <img src="https://icon-library.com/images/tour-icon/tour-icon-3.jpg" alt="" class="IF">
+              <h3 class="contorno">Tours</h3> 
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!------------------------------Columas------------------------------------------------->
+      <!--contenido columnas 1-->
+      <section class="container ContPrincipal margenes1">
+        <section class="container-fluid">
+          <div class="row ">
+            <div class="col-12 col-lg-6 col1" style="padding: 0;">
+              <img src="https://iphonegr.mural.com.mx/libre/online07/imagetransformer2/ImageTransformer.aspx?img=https://img.gruporeforma.com/imagenes/960x640/5/553/4552625.jpg&imagencompleta=1" alt="conIm1" class="medidas">
+            </div>
+            <div class="col-12 col-lg-6 col1 posiciones2" >
+              <p>
+                <h1> Move on!</h1>
+                <span>Have fun doing activities in nature</span>    
+              </p>
+            </div>
+          </div>
+        </section>
+        <!--contenido columnas 2-->
+        <section class="container-fluid">
+          <div class="row posInv">
+            <div class="col-12 col-lg-6 col1 posiciones2">
+              <p>
+                <h1>Enjoy</h1>
+                <span>Relax and enjoy your stay with beautiful landscapes</span>
+                </p>
+            </div>
+            <div class="col-12 col-lg-6 col1" style="padding: 0;">
+                <img src="https://www.huaxteca.com/wp-content/uploads/2015/10/Alberca-Bar-y-Bungalows.jpg" alt="conIm1" class="medidas">
+            </div>
+          </div>
+        </section>
+        <!--contenido columnas 3-->
+        <section class="container-fluid">
+          <div class="row">
+            <div class="col-12 col-lg-6 col1" style="padding: 0;">
+              <img src="https://www.eluniversal.com.mx/resizer/DwWOMtXmbt5hJTGIGu-eDQDPP9Y=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/3JD75MEDRFG2NCU6YYPYVNDELA.jpg" alt="conIm1" class="medidas">
+            </div>
+            <div class="col-12 col-lg-6 col1 posiciones2">
+              <p>
+                <h1> Come and meet us!</h1>
+                <span>Venture to know and explore the diverse and <br>magical landscapes that San Luis Potosi offers.</span>     
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      
+      <!-----------------------experiencias/testimonios--------------------------------------->
+      <section class="container-fluid margenes1 contFondo">
+          <h1 >Experiences</h1>
+          <div class="row">
+              <div class="col-12 col-md-4 posiciones2">
+                  <img src="https://i.pinimg.com/564x/5a/04/f6/5a04f60ea35fff0f1ab5b42ae1601bf4.jpg" alt="F3" class="foto">  
+                  <h3>Name</h3>
+                  <p>"This is fantastic!</p>
+              
+              </div>
+              <div class="col-12 col-md-4 posiciones2">
+                  <img src="https://i.pinimg.com/564x/4a/53/34/4a5334a4c64075ebf024c3fd0266c216.jpg" alt="F1" class="foto">
+                  <h3>Name</h3>
+                  <p>"This is fantastic!</p>
+              
+              </div>
+              <div class="col-12 col-md-4 posiciones2">
+                  <img src="https://i.pinimg.com/564x/18/eb/e2/18ebe25f67f365b6c8245fafed1ee7b9.jpg" alt="F2" class="foto">
+                  <h3>Name</h3>
+                  <p>"This is fantastic!</p>
+              </div>
+          </div>
+      </section>
+      <!--Contactanos-->
+      <section class="container-fluid IFondo posiciones">
+        
+        <div class="con1 posiciones2" >
+            <h2 class="tex">Live a new adventure</h2>
+            <button type="button" class="btn btn-outline-success">Contact us!</button>
+        </div>
+        <div class="con1 posiciones2">
+            <h2 class="tex">For more information leave us your information: </h2>
+            <div class="container">
+               <div class="row">
+                <div class="col-4"></div>
+                <div class="col-12 col-lg-4">
+                  <div class="input-group flex-nowrap">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+                    <button class="btn btn-outline-success" type="button" id="button-addon2">Send</button>
+                  </div>
+               </div>
+            </div>
+        </div>
+      </section>
+
+      <!--footer-->
+      <footer>
+        <section class="container-fluid footerCont">
+          <div class="row">
+            <div class="col-4 foot1">
+              <img src="https://img.freepik.com/vector-gratis/plantilla-logo-montanismo_1126-55.jpg" alt="" class="logo">
+            </div>
+            <div class="col-4 foot2">
+              <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">About</a></p>
+              <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Contact</a></p>
+              <p><a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Privacy Policy</a></p>
+            </div>
+            <div class="col-4 foot3">
+              <img src="https://www.acpo.com/wp-content/uploads/2022/08/facebook-black-icon-1024x1024.png" alt="facebook" class="redI">
+              <img src="https://img.freepik.com/vector-premium/nuevo-logotipo-twitter-x-2023-descarga-vector-logotipo-twitter-x_691560-10798.jpg" alt="x" class="redI">
+              <img src="https://static.vecteezy.com/system/resources/previews/023/741/148/non_2x/instagram-logo-icon-social-media-icon-free-png.png" alt="instagram" class="redI">
+            </div>
+          
+          </div>
+          
+        </section>
+
+      </footer>
+    </main>
+    
+    
+
+
+      
+
+    <!--linea de javascript va al final-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

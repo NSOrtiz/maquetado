@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(15, 44, 26);
+}
+.margenes1{
+    margin-bottom: 30px;
+}
+/*hero slide*/
+.tamañoH{
+    max-height: 35vh;
+    width: 100%;
+}
+
+.difuse{
+    backdrop-filter: blur(2.5px);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+}
+
+/*contenido tercias*/
+
+.IF{  
+    height: 100px;
+    overflow: hidden; 
+    filter: brightness(1.1);
+    mix-blend-mode: multiply; 
+}
+
+.contenedor{
+    cursor: pointer;
+}
+.contenedor:hover{ 
+    background-color: rgba(86, 241, 184, 0.3);
+}
+
+.posiciones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+}
+
+.contorno{
+    color: black;
+    font-weight: 700;
+}
+
+/*contenido de columnas */
+
+.ContPrincipal{
+    color: rgb(15, 44, 26);
+    
+}
+
+.posiciones2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.col1{
+    width:100%;
+    height: 300px;
+    background: rgb(179, 235, 214);
+    border: 1px solid rgb(148, 199, 167);
+}
+
+.posInv{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.medidas{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*experiencias */
+.foto{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid rgba(86, 241, 184, 0.3);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    
+}
+
+.contFondo{
+    background-color: rgb(179, 235, 214);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid rgb(148, 199, 167);
+    border-bottom: 1px solid rgb(170, 211, 186);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+/*----contacto----*/
+
+.row{
+    width: 100%;
+}
+
+.IFondo{
+    background-image: url(https://foodandpleasure.com/wp-content/uploads/2019/08/visita-la-huasteca-potosina.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+.con1{
+   background-color: rgba(255, 255, 255, 0.3);
+   width: 100%;
+   height: 50%;
+   backdrop-filter: blur(2.5px);
+}
+
+/*footer*/
+.footerCont{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.foot1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: baseline;
+}
+.foot2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.foot3{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 20px;
+}
+
+.logo{
+    height: 100px;
+}
+
+.redI {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+    cursor: pointer;
+}
+
+.redI:hover {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+
+@media screen and (min-width:760px) {
+    /*hero*/
+    .tamañoH{
+        max-height: 50vh;
+    }
+    .foot1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width:990px) {
+    .tamañoH{
+        max-height: 60vh;
+    }
+    .posInv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .foot2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        gap: 20px;
+    }
+
+}
+
+
